@@ -1,0 +1,22 @@
+[
+	{	
+		"op": "add",
+		"path": "/deploymentConfig/scripts/-",
+		"value": "/modeSystems/deployment/statusEffects/deployment.lua"
+	},
+	{	
+		"op": "add",
+		"path": "/deploymentConfig/scripts/-",
+		"value": "/modeSystems/deployment/pickerPopup/deployment.lua"
+	},
+	{	
+		"op": "add",
+		"path": "/deploymentConfig/scripts/-",
+		"value": "/modeSystems/deployment/clothes/deployment.lua"
+	},
+	{	
+		"op": "add",
+		"path": "/deploymentConfig/scripts/-",
+		"value": "/modeSystems/deployment/noclip/deployment.lua"
+	}
+]

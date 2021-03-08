@@ -1,0 +1,45 @@
+{
+	"input" : [
+	],
+	"output" : {
+	"parameters": {
+		"description": "Telkinesis magic lookin thingy",
+		"scripts": ["/blockHover/item.lua"],
+		"animationParts": {
+			"middle": ""
+		},
+		"rarity": "legendary",
+		"inventoryIcon": "/assetmissing.png",
+		"shortdescription": "Telekinesis",
+		"tooltipKind": "base",
+		"twoHanded": true,
+		"createdby": "Inferion",
+		"category": "^yellow;Script Item",
+        "tooltipFields": {
+            "rarityLabel": "Salism"
+        },
+		"animationCustom": {
+			"globalTagDefaults": {},
+			"sounds" : {
+			},
+			"animatedParts": {
+				"parts": {
+					"base": {
+						"properties": {
+							"image": "",
+							"transformationGroups": ["weapon"],
+							"centered": true,
+							"offset": [0, 0]
+						}
+					}
+				}
+			},
+			"particleEmitters": {
+			}
+		}
+	},
+	"name": "bubblegun",
+	"count": 1
+},
+	"groups" : ["plain", "tier1"]
+}

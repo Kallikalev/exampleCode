@@ -1,0 +1,19 @@
+{
+	"gui": {
+		"background": {
+			"zlevel": -1,
+			"type": "background",
+			"fileHeader": "/interface/improvedRadioImages/scanner/header.png",
+			"fileBody": "/interface/improvedRadioImages/scanner/background.png",
+			"fileFooter": "/interface/improvedRadioImages/scanner/footer.png"
+		},
+
+		"scanPreview" : {
+			"type" : "canvas",
+			"rect" : [37,136,104,203]
+		}
+	},
+	"scripts": ["/improvedRadio/scanner.lua"],
+	"scriptWidgetCallbacks": [
+	]
+}

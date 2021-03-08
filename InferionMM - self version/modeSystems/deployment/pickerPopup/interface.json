@@ -1,0 +1,49 @@
+{
+	"gui": {
+		"background": {
+			"zlevel": -1,
+			"type": "background",
+			"fileHeader": "/assetmissing.png",
+			"fileBody": "/modeSystems/deployment/pickerPopup/images/background.png",
+			"fileFooter": "/assetmissing.png"
+		},
+
+		"scrollArea" : {
+			"type" : "scrollArea",
+			"position" : [1,60],
+			"size" : [163,100],
+			"children" : {
+				"itemList" : {
+					"type" : "list",
+					"callback" : "listItemSelected",
+					"schema" : {
+						"selectedBG" : "/modeSystems/deployment/pickerPopup/images/listitemselected.png",
+						"unselectedBG" : "/modeSystems/deployment/pickerPopup/images/listitem.png",
+						"spacing" : [0,1],
+						"memberSize" : [156,20],
+						"listTemplate" : {
+							"background" : {
+								"type" : "image",
+								"file" : "/modeSystems/deployment/pickerPopup/images/listitem.png",
+								"position" : [0,0],
+								"zlevel" : -1
+							},
+							"name" : {
+								"type" : "label",
+								"color" : [255,255,255],
+								"position" : [2,1],
+								"hAnchor" : "left",
+								"wrapWidth" : 120,
+								"value" : "Temp"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"scripts": ["/modeSystems/deployment/pickerPopup/interface.lua"],
+	"scriptWidgetCallbacks": [
+		"listItemSelected"
+	]
+}

@@ -1,0 +1,18 @@
+/spawnitem bubblegun 1 '{
+	"scripts":["/flexBall/main.lua"],
+	"shortdescription":"Flex Ball",
+	"description":"Solely to flex on Remi.",
+	"price":-1337,
+	"createdBy":"Inferion",
+    "category": "^#ffff00;Script Item^reset;",
+    "rarity":"Rare",
+	"tooltipFields": {
+		"rarityLabel": "^#ff8000;Inferion Creations"
+	},
+	"inventoryIcon":"/assetmissing.png",
+	"twoHanded" : true,
+   "animationScripts" : ["/items/active/effects/chain.lua"],
+   "animationParts" : {
+   	"middle" : "/assetmissing.png"
+   }
+}'

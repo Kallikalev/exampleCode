@@ -1,0 +1,7 @@
+[
+	{	
+		"op": "add",
+		"path": "/deploymentConfig/scripts/-",
+		"value": "/fancyFerion/modules/identityController/deployment.lua"
+	}
+]

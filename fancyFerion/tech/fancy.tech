@@ -1,0 +1,19 @@
+{
+  "name" : "fancy",
+  "type" : "head",
+
+  "scripts" : ["/fancyFerion/tech.lua"],
+  "animator" : "/tech/distortionsphere/distortionsphere.animation",
+
+  "description" : "Inferion's private fancy effects",
+  "shortDescription" : "FancyFerion",
+  "rarity" : "Legendary",
+  "icon" : "/tech/spikesphere.png",
+
+  "animationParts" : {
+    "ballGlow" : "",
+    "ball" : ""
+  },
+
+  "chipCost" : 0
+}

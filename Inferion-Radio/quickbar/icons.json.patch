@@ -1,0 +1,11 @@
+[
+  {
+    "op": "add",
+    "path": "/normal/-",
+    "value": {
+      "label": "Improved Radio",
+      "scriptAction": "improvedRadio:openInterface",
+      "icon": "/quickbar/improvedRadioIcon.png"
+    }
+  }
+]

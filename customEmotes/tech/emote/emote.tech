@@ -1,0 +1,19 @@
+{
+  "name" : "emote",
+  "type" : "body",
+
+  "scripts" : ["emote.lua"],
+  "animator" : "/tech/distortionsphere/distortionsphere.animation",
+
+  "description" : "Inferion's custom Emote System",
+  "shortDescription" : "Emotes",
+  "rarity" : "Legendary",
+  "icon" : "/tech/spikesphere.png",
+
+  "animationParts" : {
+    "ballGlow" : "",
+    "ball" : ""
+  },
+
+  "chipCost" : 1
+}

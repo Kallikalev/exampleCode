@@ -1,0 +1,105 @@
+/spawnitem bubblegun 1 '{
+	"scripts": [
+	  "/fireManipulator/main.lua"
+	],
+	"shortdescription": "Fire Manipulator",
+	"description": "Break things! With fire!",
+	"price": 777,
+	"createdBy": "Inferion",
+	"category": "^#ffff00;Script Item^reset;",
+	"rarity": "Rare",
+	"tooltipFields": {
+	  "rarityLabel": "^#ff8000;Inferion Creations"
+	},
+	"inventoryIcon": "/assetmissing.png",
+	"animationScripts": [
+	  "/items/active/effects/lightning.lua"
+	],
+	"animationCustom": {
+	  "globalTagDefaults": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"image": "/humanoid/any/gravgun1.png",
+		"directives": ""
+	  },
+	  "animatedParts": {
+		"parts": {
+		  "1": {
+			"properties": {
+			  "centered": true,
+			  "zLevel": 1,
+			  "image": "<1>",
+			  "offset": [
+				0,
+				0
+			  ],
+			  "transformationGroups": [
+				"1",
+				"block"
+			  ]
+			}
+		  },
+		  "2": {
+			"properties": {
+			  "centered": true,
+			  "zLevel": 2,
+			  "image": "<2>",
+			  "offset": [
+				0,
+				0
+			  ],
+			  "transformationGroups": [
+				"2",
+				"block"
+			  ]
+			}
+		  },
+		  "3": {
+			"properties": {
+			  "centered": true,
+			  "zLevel": 3,
+			  "image": "<3>",
+			  "offset": [
+				0,
+				0
+			  ],
+			  "transformationGroups": [
+				"3",
+				"block"
+			  ]
+			}
+		  },
+		  "middle": {
+			"properties": {
+			  "centered": true,
+			  "image": "<image><directives>",
+			  "offset": [
+				0.25,
+				0
+			  ],
+			  "fullbright": false,
+			  "transformationGroups": [
+				"weapon"
+			  ]
+			}
+		  }
+		}
+	  },
+	  "transformationGroups": {
+		"1": {
+		  "interpolated": false
+		},
+		"2": {
+		  "interpolated": false
+		},
+		"3": {
+		  "interpolated": false
+		},
+		"block": {
+		  "interpolated": false
+		}
+	  }
+	},
+	"twoHanded": true
+  }'

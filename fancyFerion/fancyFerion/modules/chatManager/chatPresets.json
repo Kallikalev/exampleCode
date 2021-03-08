@@ -1,0 +1,11 @@
+[
+    {
+        "type" : "none",
+        "preview" : false
+    },
+    {
+        "preview" : true,
+        "type" : "gradient",
+        "colors" : ["ff8000","ffffff"]
+    }
+]

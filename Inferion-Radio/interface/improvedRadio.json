@@ -1,0 +1,131 @@
+{
+  "gui": {
+    "background": {
+      "zlevel": -1,
+      "type": "background",
+      "fileHeader": "/interface/improvedRadioImages/header.png",
+      "fileBody": "/interface/improvedRadioImages/background.png",
+      "fileFooter": "/interface/improvedRadioImages/footer.png"
+    },
+
+    "playerScrollArea": {
+      "type": "scrollArea",
+      "position": [ 10, 15 ],
+      "size": [ 156, 190 ],
+      "children": {
+        "playerList": {
+          "type": "list",
+          "schema": {
+            "selectedBG": "/interface/improvedRadioImages/listItemSelected.png",
+            "unselectedBG": "/interface/improvedRadioImages/listItem.png",
+            "spacing": [ 0, 1 ],
+            "memberSize": [ 156, 20 ],
+            "listTemplate": {
+              "background": {
+                "type": "image",
+                "file": "/interface/improvedRadioImages/listItem.png",
+                "position": [ 0, 0 ],
+                "zlevel": -1
+              },
+              "name": {
+                "type": "label",
+                "color": [ 0, 0, 0 ],
+                "position": [ 2, 1 ],
+                "hAnchor": "left",
+                "wrapWidth": 120,
+                "value": "Temp"
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "buttonPrivateMessage": {
+      "type": "button",
+      "position": [ 240, 15 ],
+      "base": "/interface/improvedRadioImages/button.png",
+      "hover": "/interface/improvedRadioImages/buttonlit.png",
+      "disabledImage": "/interface/buttongrayed.png",
+      "caption": "Private",
+      "callback": "privateMessage"
+    },
+
+    "buttonPublicMessage": {
+      "type": "button",
+      "position": [ 167, 15 ],
+      "base": "/interface/improvedRadioImages/button.png",
+      "hover": "/interface/improvedRadioImages/buttonlit.png",
+      "disabledImage": "/interface/buttongrayed.png",
+      "caption": "Public",
+      "callback": "publicMessage"
+    },
+
+    "textboxMessage": {
+      "type": "textbox",
+      "position": [ 168, 200 ],
+      "hint": "Type message here",
+      "callback": "blank",
+      "maxWidth": 123
+    },
+
+    "textboxFile": {
+      "type": "textbox",
+      "position": [ 204, 30 ],
+      "hint": "example.png",
+      "callback": "blank",
+      "maxWidth": 150
+    },
+
+    "radioPreview": {
+      "type": "canvas",
+      "rect": [ 209, 139, 253, 185 ]
+    },
+
+    "buttonModeLeft": {
+      "type": "button",
+      "position": [ 194, 148 ],
+      "base": "/interface/improvedRadioImages/scrollLeftBase.png",
+      "hover": "/interface/improvedRadioImages/scrollLeftHover.png",
+      "disabledImage": "",
+      "callback": "modeLeft"
+    },
+
+    "buttonModeRight": {
+      "type": "button",
+      "position": [ 258, 148 ],
+      "base": "/interface/improvedRadioImages/scrollRightBase.png",
+      "hover": "/interface/improvedRadioImages/scrollRightHover.png",
+      "disabledImage": "",
+      "callback": "modeRight"
+    },
+
+    "buttonAddMode": {
+      "type": "button",
+      "position": [ 258, 178 ],
+      "base": "/interface/easel/add.png:normal",
+      "hover": "/interface/easel/add.png:highlight",
+      "disabledImage": "",
+      "callback": "addMode"
+    },
+
+    "buttonDeleteMode": {
+      "type": "button",
+      "position": [ 258, 169 ],
+      "base": "/interface/easel/delete.png:normal",
+      "hover": "/interface/easel/delete.png:highlight",
+      "disabledImage": "",
+      "callback": "deleteMode"
+    }
+  },
+	"scripts": ["/improvedRadio/main.lua"],
+	"scriptWidgetCallbacks": [
+		"privateMessage",
+		"publicMessage",
+		"modeLeft",
+		"modeRight",
+		"addMode",
+		"deleteMode",
+		"blank"
+	]
+}

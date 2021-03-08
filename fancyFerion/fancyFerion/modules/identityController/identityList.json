@@ -1,0 +1,82 @@
+[
+    {
+        "facialHairType" : "",
+        "facialHairGroup" : "",
+        "personalityArmOffset" : [0, 0],
+        "hairType" : "male41",
+        "bodyDirectives" : "?replace;c7815b=b37c5d;ffe2c5=fff7ec;ffc181=f9d3a9;d39c6c=d3a57c?replace;dc1f00=9e9e9e;951500=434343;be1b00=6e6e6e",
+        "personalityArmIdle" : "idle.3",
+        "gender" : "male",
+        "personalityHeadOffset" : [-1, 0],
+        "hairGroup" : "hair",
+        "facialMaskDirectives" : "",
+        "species" : "human",
+        "personalityIdle" : "idle.3",
+        "facialMaskGroup" : "",
+        "name" : "Inferion",
+        "facialHairDirectives" : "",
+        "emoteDirectives" : "?replace;c7815b=b37c5d;ffe2c5=fff7ec;ffc181=f9d3a9;d39c6c=d3a57c?replace;dc1f00=9e9e9e;951500=434343;be1b00=6e6e6e",
+        "hairDirectives" : "?crop;0;0;1;1?setcolor=fff?replace;fff0=fff?border=1;fff;000?scale=1.15;1.12?crop;1;1;3;3?replace;fbfbfb=0000;eaeaea=2b000000;e4e4e4=00002b00;6a6a6a=2b002b00?scale=42.5?crop=0;0;43;43?replace;0f001a00=210;10001800=210;10001900=210;10001a00=010;10001b00=210;10001d00=210;11001700=210;11001800=703713;11001900=010;11001a00=010;11001b00=010;11001c00=210;11001d00=010;11001e00=210;12001600=210;12001900=813f12;12001a00=010;12001b00=310;12001c00=010;12001d00=110;12001e00=010;12001f00=210;13001800=010;13001900=010;13001a00=110;13001b00=310;13001c00=310;13001d00=410;13001e00=010;13001f00=010;13002000=210;14001700=010;14001800=310;14001900=310;14001a00=310;14001b00=310;14001c00=410;14001d00=310;14001e00=310;14001f00=010;14002000=210;15001800=d4d2cc;15001900=c0b8b8;15001a00=3d2c2b;15001b00=110;15001c00=410;15001d00=310;15001e00=310;15001f00=010;15002000=010;15002100=210;15002200=210;16001800=667d63;16001900=5c735a;16001a00=3d2c2b;16001b00=010;16001c00=310;16001d00=310;16001e00=310;16001f00=010;16002000=310;16002100=310;16002200=010;17001900=110;17001a00=984a03;17001b00=310;17001c00=310;17001d00=310;17001e00=310;17001f00=310;17002000=110;17002100=010;18001a00=010;18001b00=010;18001c00=310;18001d00=310;18001e00=310;18001f00=010;19001800=445554;19001900=344400;19001a00=3d2c2b;19001b00=010;19001c00=310;19001d00=310;19001e00=310;19001f00=010;1a001700=210;1a001800=010;1a001900=010;1a001a00=110;1a001b00=310;1a001c00=410;1a001d00=310;1a001e00=010;1b001a00=210;1b001b00=6c2a02;1b001c00=010;1b001d00=010?replace;010=853600;110=964904;210=571d00;310=a85500;410=c16e00",
+        "facialMaskType" : "",
+        "breathing" : false,
+        "clothes" : {
+            "chestCosmetic" : {"parameters":{"colorIndex":5},"name":"cultistchest","count":1},
+            "legsCosmetic" : {"parameters":{"colorIndex":5},"name":"cultistlegs","count":1},
+            "headCosmetic" : "none",
+            "backCosmetic" : "none"
+        }
+    },
+    {
+        "facialHairType" : "0",
+        "facialHairGroup" : "brand",
+        "personalityArmOffset" : [0, 0],
+        "hairType" : "male0",
+        "bodyDirectives" : "?replace;fff8b5=fdd14d;fde03f=fd8f4d;f6b919=da5302",
+        "personalityArmIdle" : "idle.2",
+        "gender" : "male",
+        "personalityHeadOffset" : [-1, 0],
+        "hairGroup" : "hair",
+        "facialMaskDirectives" : "",
+        "species" : "novakid",
+        "personalityIdle" : "idle.4",
+        "facialMaskGroup" : "",
+        "name" : "Fancyferion",
+        "facialHairDirectives" : "",
+        "emoteDirectives" : "",
+        "hairDirectives" : "",
+        "facialMaskType" : "",
+        "breathing" : true,
+        "clothes" : {
+            "chestCosmetic" : {"parameters":{"directives":"?replace;a85636=880001;e0975c=b1100f;ffca8a=d13030;6f2919=520001"},"name":"cultistchest","count":1},
+            "legsCosmetic" : {"parameters":{"directives":"?replace;a85636=880001;e0975c=b1100f;ffca8a=d13030;6f2919=520001"},"name":"cultistlegs","count":1},
+            "headCosmetic" : "none",
+            "backCosmetic" : "none"
+        }
+    },
+    {
+        "facialHairType" : "",
+        "facialHairGroup" : "",
+        "personalityArmOffset" : [0, 0],
+        "hairType" : "male0",
+        "bodyDirectives" : "",
+        "personalityArmIdle" : "idle.1",
+        "gender" : "male",
+        "personalityHeadOffset" : [0, 0],
+        "hairGroup" : "hair",
+        "facialMaskDirectives" : "",
+        "species" : "human",
+        "personalityIdle" : "idle.1",
+        "facialMaskGroup" : "",
+        "name" : "Noob",
+        "facialHairDirectives" : "",
+        "emoteDirectives" : "",
+        "hairDirectives" : "",
+        "facialMaskType" : "",
+        "breathing" : false,
+        "clothes" : {
+            "chestCosmetic" : "none",
+            "legsCosmetic" : "none",
+            "headCosmetic" : "none"
+        }
+    }
+]

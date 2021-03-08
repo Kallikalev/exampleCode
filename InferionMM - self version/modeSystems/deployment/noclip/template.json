@@ -1,0 +1,18 @@
+{
+  "count": 1,
+  "name": "batterypackAAback",
+  "parameters": {
+    "price" : 5000,
+    "inventoryIcon" : "batterypackAAbackicon.png",
+    "rarity" : "Legendary",
+    "category" : "backwear",
+    "description" : "So that you always look energised!",
+    "shortdescription" : "AA Battery Pack",
+    "tooltipKind" : "back",
+
+    "maleFrames" : "back.png",
+    "femaleFrames" : "back.png",
+    "maxStack" : 1,
+    "directives" : ""
+  }
+}

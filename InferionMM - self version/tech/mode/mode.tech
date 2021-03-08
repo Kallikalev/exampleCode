@@ -1,0 +1,19 @@
+{
+  "name" : "mode",
+  "type" : "head",
+
+  "scripts" : ["mode.lua"],
+  "animator" : "/tech/distortionsphere/distortionsphere.animation",
+
+  "description" : "Control all your tech functions in multiple modes!",
+  "shortDescription" : "Mode Systems",
+  "rarity" : "Legendary",
+  "icon" : "/tech/spikesphere.png",
+
+  "animationParts" : {
+    "ballGlow" : "/assetmissing.png",
+    "ball" : "/assetmissing.png"
+  },
+
+  "chipCost" : 1
+}

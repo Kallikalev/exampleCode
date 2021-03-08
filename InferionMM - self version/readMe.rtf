@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Oblique;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-Bold;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww16080\viewh9500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\i\fs28 \cf0 Thanks to my beta testers:
+\f1\i0\fs24 \
+
+\f0\i FezzedOne#6608\
+Risky#0002\
+Kiato#6954\
+Chaotix#5266\
+P_2the_inni#5876\
+samithelime#6084
+\f1\i0 \
+\
+
+\f2\b\fs48 \ul Customization Guide:
+\f1\b0 \ulnone \
+
+\f2\b\fs24 \ul \
+Edit \'93/modeSystems/config.json\'94 to customize.\
+\
+
+\f1\b0\fs36 Particles:
+\fs24 \ulnone \
+A few different systems in this tech have customizable particles, but they all have a few things in common.\
+\
+The 
+\f2\b particleRate
+\f1\b0  parameter is how many seconds between particle spawns. This can be a decimal or an integer.\
+\
+The 
+\f2\b numParticles
+\f1\b0  parameter is the amount of particles spawned at once. This can only be an integer.\
+\
+The 
+\f2\b particleSpecification
+\f1\b0  parameter is the exact configuration of the particle. This is formatted in the exact same way as the 
+\f0\i definition
+\f1\i0  section of any .particle file, or the 
+\f0\i specification
+\f1\i0  parameter in a projectile action. This can be either a specification table or an array of specification tables, at which point one will be picked randomly every time a particle spawns.\
+\
+The 
+\f2\b particlePos
+\f1\b0  parameter determines where the particle will spawn, measured in blocks, relative to the player position. This can either be an array of two numbers, at which point the particle will always spawn at that position, an array of two positions, which will determine the bottom left and top right corners of a box, or a table with the \'93left\'94 and \'93right\'94 keys, each having a position configuration, so that the particles can vary based on which direction the player is facing.\
+\
+\ul ParticlePos Examples:\
+\ulnone \'93particlePos\'94: [0,0]\
+\'93particlePos\'94: [\
+    [-1,-1],\
+    [1,1]\
+]\
+\'93particlePos\'94: \{\
+    \'93left\'94: [\
+        [0,-0.5],\
+        [1,1]\
+    ],\
+    \'93right\'94: [\
+        [-1,-0.5],\
+        [0,1]\
+    ]\
+\}\
+\
+
+\fs36 \ul Noclip:\
+
+\fs24 \ulnone The noclip customization has two main parts. The flying animation using back items, and the particle effects.\
+\
+The 
+\f2\b particlesActive
+\f1\b0  parameter is a boolean that determines whether particles will spawn while noclip is active.\
+\
+All the parameters in the Particles section above are used, except for the 
+\f0\i particleCount
+\f1\i0  parameter, since the noclip is continuous.\
+\
+The 
+\f2\b backAnimationActive
+\f1\b0  parameter is a boolean that determines whether there will be a back animation while the noclip is active.\
+\
+The 
+\f2\b state
+\f1\b0  parameter determines what animation state the player will be in while noclipping. The valid states are \'93Stand\'94, \'93Fly\'94, \'93Fall\'94, \'93Sit\'94, \'93Lay\'94, \'93Duck\'94, \'93Walk\'94, \'93Run\'94, and \'93Swim\'94.\
+\
+The 
+\f2\b animationCycleSpeed
+\f1\b0  parameter specifies how many times the back animation will change in one second.\
+\
+The 
+\f2\b backAnimationBaseImage
+\f1\b0  parameter determines what vanilla image is used for the back animation. It is highly recommended to use one of the images named \'93back.png\'94 found in \'93/items/armors/backitems/\'93 in the assets.\
+\
+The 
+\f2\b backAnimationDirectives
+\f1\b0  parameter determines the directives that are applied to the image. These are generally used to change the color of the item. The formatting for directives can be found here \'93https://starbounder.org/Modding:Image_Processing_Directives\'94.\
+\
+The 
+\f2\b backAnimationFrames
+\f1\b0  parameter is an array of frames. The back animation will loop through all the specified frames during its cycle. All the possible frames can be found in \'93/items/armors/back.frames\'94 in the assets.\
+\
+\ul BackAnimationFrames Example:\ulnone \
+\
+\'93backAnimationFrames\'94 : [\
+    \'93jump.1\'94,\
+    \'93jump.2\'94,\
+    \'93jump.3\'94,\
+    \'93jump.4\'94\
+]\
+\
+
+\fs36 \ul Blink:\
+
+\fs24 \ulnone The only customizable part about the blink is what particles spawn at the start and end location of the blink.\
+\
+The 
+\f2\b particlesActive
+\f1\b0  parameter is a boolean that determines whether or not particles will spawn when you use the blink.\
+\
+All the parameters described in the Particles section above are used, except for the 
+\f0\i particleRate
+\f1\i0  parameter, since the blink is instantaneous.\
+\
+
+\fs36 \ul Passive Particles:
+\fs24 \ulnone \
+Passive particles are like any other particles, but they are always active and around you.\
+\
+The 
+\f2\b particlesActive
+\f1\b0  parameter is a boolean that determines whether or not particles will spawn when the mode is active.\
+\
+All the parameters in the Particles section above are used, except for the 
+\f0\i particleCount
+\f1\i0  parameter, since the passive particles are continuous.\
+\
+
+\fs36 \ul Status Effects:
+\fs24 \ulnone \
+You can have passive status effects enabled or disabled inside the modes. The entire 
+\f2\b statusEffects
+\f1\b0  section is an array of status effects. The names of all these can be found in \'93/stats/effects/\'93 in the assets.\
+\
+\ul StatusEffects Example\'94\ulnone \
+\'93statusEffects\'94 : [\
+    \'93jumpboost\'94,\
+    \'93glow\'94,\
+    \'93fireblock\'94\
+]\
+\
+
+\fs36 \ul Clothing:
+\fs24 \ulnone \
+This mod allows the user to have custom clothing based on what mode is used. The clothing will only be equipped when the mode is first selected, and all clothing in the slots that would be overridden is moved to the inventory.\
+\
+The 
+\f2\b clothingActive
+\f1\b0  parameter is a boolean that determines whether the specified mode controls clothing or not.\
+\
+The 
+\f2\b clothesConfig
+\f1\b0  parameter is a table of what slots are filled with what clothing. The keys are the names of the slots and the contents are the item descriptors of the armor that go in those slots. To make sure that slot is always empty set the contents to \{\}. The available slots are \'93head\'94, \'93headCosmetic\'94, \'93chest\'94, \'93chestCosmetic\'94, \'93legs\'94, \'93legsCosmetic\'94, \'93back\'94, and \'93backCosmetic\'94.\
+\
+\ul ClothesConfig Example:\
+\ulnone \'93clothesConfig\'94 : \{\
+    "chestCosmetic" : \{\'93name":"humantier5achest","count":1\},\
+    "legsCosmetic" : \{"name":"apextier3pants","count":1\},\
+    "headCosmetic" : \{"name":"visorhead","count":1\},\
+    "backCosmetic" : \{\}\
+\}\ul \
+\ulnone \
+
+\fs36 \ul Directives:
+\fs24 \ulnone \
+In case there\'92s any extra customization that you want to do after everything else, the 
+\f2\b directives
+\f1\b0  parameter is a string that lets you add on any extra directives to your player. The formatting for directives can be found here \'93https://starbounder.org/Modding:Image_Processing_Directives\'94.}
